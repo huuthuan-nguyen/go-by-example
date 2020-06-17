@@ -15,11 +15,11 @@ func check(e error) {
 }
 
 func main() {
-	dat, err := ioutil.ReadFile("/tmp/dat")
+	dat, err := ioutil.ReadFile("./dat")
 	check(err)
 	fmt.Print(string(dat))
 
-	f, err := os.Open("/tmp/dat")
+	f, err := os.Open("./dat")
 	check(err)
 
 	b1 := make([]byte, 5)
